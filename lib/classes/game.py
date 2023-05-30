@@ -28,7 +28,7 @@ class Game:
         if type(value) == str and len(value) >0 and not hasattr(self, "title"):
             self._title = value
         else:
-            raise ValueError("Exception")
+            raise Exception("value must be a string of 1 or more characters and cannot be changed if exists")
 
         
     def results(self, new_result=None):

@@ -18,7 +18,7 @@ class Player:
         if (type(value) == str and 2 <= len(value)<= 16):
             self._username = value
         else:
-            raise ValueError("Exception")
+            raise Exception("value must be a string with more than 1 characters")
         
     def results(self, new_result=None):
         from classes.result import Result

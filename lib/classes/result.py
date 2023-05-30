@@ -17,7 +17,7 @@ class Result:
         if type(value) == int and 1<=value <= 5000:
             self._score = value
         else:
-            raise ValueError("Exception")
+            raise Exception("value must be an integer more than zero")
         
     @property
     def player(self):
@@ -28,7 +28,7 @@ class Result:
         if isinstance(value, Player):
             self._player = value
         else:
-            raise ValueError("Exception")
+            raise Exception("player must be in the class Player")
         
     @property
     def game(self):
@@ -39,4 +39,4 @@ class Result:
         if isinstance(value, Game):
             self._game = value
         else:
-            raise ValueError("Exception")
+            raise Exception("game must be in the class Game")
